@@ -8,16 +8,21 @@ There is also a reports page that has 3 pre-generated reports that allow the use
 
 
 Login Page, with placeholder user culture.
+
 ![](UserInterface/Login.png)
 
 The dashboard the user is greeted too after logging in.
+
 ![](UserInterface/Dashboard.png)
 
 The add customer page. There is data validation for each field.
+
 ![](UserInterface/AddCustomer.png)
 
 The add appointment page. There is data validation for every field, including the date pickers. You can't pick a date in the past for example.
+
 ![](UserInterface/AddAppointment.png)
 
 The reports page, with 3 radio buttons that swap between the pre-generated reports.
+
 ![](UserInterface/Reports.png)
