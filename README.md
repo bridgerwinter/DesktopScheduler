@@ -7,7 +7,7 @@ The user logins to the database, and the language of the login page will adjust 
 There is also a reports page that has 3 pre-generated reports that allow the user to see the total appointments per user, total per type, and the appointments associated with each employee. 
 
 
-Login Page, with placeholder user culture.
+Login page, with placeholder user culture.
 
 ![](UserInterface/Login.png)
 
