@@ -13,7 +13,7 @@ namespace desktopScheduler
 		static MySqlConnection con;
 		public static void connectAndOpenDB()
 		{
-			con = new MySqlConnection("server = wgudb.ucertify.com; user id = U057MV;password=53688432820; persistsecurityinfo = True; database = U057MV");
+			con = new MySqlConnection("server = wgudb.ucertify.com; user id = username;password=password; persistsecurityinfo = True; database = databasename");
 			con.Open();
 		}
 		public static void closeConnection()
