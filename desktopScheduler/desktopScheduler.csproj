@@ -47,16 +47,100 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAppointment.Designer.cs">
+      <DependentUpon>addAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifyCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyCustomer.Designer.cs">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_total_appointments_per_user.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_total_appointments_per_user.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_total_type.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_total_type.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_user_schedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_user_schedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="U057MVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>U057MVDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="U057MVDataSet3.cs">
+      <DependentUpon>U057MVDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="U057MVDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>U057MVDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="U057MVDataSet3_cur_month.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>U057MVDataSet3_cur_month.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="updateAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateAppointment.Designer.cs">
+      <DependentUpon>updateAppointment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addAppointment.resx">
+      <DependentUpon>addAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.fr.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyCustomer.resx">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +152,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateAppointment.resx">
+      <DependentUpon>updateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,6 +167,72 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="rpt_total_appointments_per_user.xsc">
+      <DependentUpon>rpt_total_appointments_per_user.xsd</DependentUpon>
+    </None>
+    <None Include="rpt_total_appointments_per_user.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpt_total_appointments_per_user.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rpt_total_appointments_per_user.xss">
+      <DependentUpon>rpt_total_appointments_per_user.xsd</DependentUpon>
+    </None>
+    <None Include="rpt_total_type.xsc">
+      <DependentUpon>rpt_total_type.xsd</DependentUpon>
+    </None>
+    <None Include="rpt_total_type.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpt_total_type.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rpt_total_type.xss">
+      <DependentUpon>rpt_total_type.xsd</DependentUpon>
+    </None>
+    <None Include="rpt_user_schedule.xsc">
+      <DependentUpon>rpt_user_schedule.xsd</DependentUpon>
+    </None>
+    <None Include="rpt_user_schedule.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rpt_user_schedule.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rpt_user_schedule.xss">
+      <DependentUpon>rpt_user_schedule.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet1.xsc">
+      <DependentUpon>U057MVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>U057MVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="U057MVDataSet1.xss">
+      <DependentUpon>U057MVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet3.xsc">
+      <DependentUpon>U057MVDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>U057MVDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="U057MVDataSet3.xss">
+      <DependentUpon>U057MVDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet3_cur_month.xsc">
+      <DependentUpon>U057MVDataSet3_cur_month.xsd</DependentUpon>
+    </None>
+    <None Include="U057MVDataSet3_cur_month.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>U057MVDataSet3_cur_month.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="U057MVDataSet3_cur_month.xss">
+      <DependentUpon>U057MVDataSet3_cur_month.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rpt_total_appointments_per_user" targetNamespace="http://tempuri.org/rpt_total_appointments_per_user.xsd" xmlns:mstns="http://tempuri.org/rpt_total_appointments_per_user.xsd" xmlns="http://tempuri.org/rpt_total_appointments_per_user.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="database" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="database (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.desktopScheduler.Properties.Settings.GlobalReference.Default.database" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_total_appointments_per_userTableAdapter" GeneratorDataComponentClassName="rpt_total_appointments_per_userTableAdapter" Name="rpt_total_appointments_per_user" UserDataComponentName="rpt_total_appointments_per_userTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database (Settings)" DbObjectName="U057MV.rpt_total_appointments_per_user" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `total_appointments`, `customerName` FROM `U057MV`.`rpt_total_appointments_per_user`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="total_appointments" DataSetColumn="total_appointments" />
+              <Mapping SourceColumn="customerName" DataSetColumn="customerName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rpt_total_appointments_per_user" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="rpt_total_appointments_per_user" msprop:Generator_UserDSName="rpt_total_appointments_per_user">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rpt_total_appointments_per_user" msprop:Generator_TableClassName="rpt_total_appointments_per_userDataTable" msprop:Generator_TableVarName="tablerpt_total_appointments_per_user" msprop:Generator_TablePropName="_rpt_total_appointments_per_user" msprop:Generator_RowDeletingName="rpt_total_appointments_per_userRowDeleting" msprop:Generator_RowChangingName="rpt_total_appointments_per_userRowChanging" msprop:Generator_RowEvHandlerName="rpt_total_appointments_per_userRowChangeEventHandler" msprop:Generator_RowDeletedName="rpt_total_appointments_per_userRowDeleted" msprop:Generator_UserTableName="rpt_total_appointments_per_user" msprop:Generator_RowChangedName="rpt_total_appointments_per_userRowChanged" msprop:Generator_RowEvArgName="rpt_total_appointments_per_userRowChangeEvent" msprop:Generator_RowClassName="rpt_total_appointments_per_userRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="total_appointments" msprop:Generator_ColumnVarNameInTable="columntotal_appointments" msprop:Generator_ColumnPropNameInRow="total_appointments" msprop:Generator_ColumnPropNameInTable="total_appointmentsColumn" msprop:Generator_UserColumnName="total_appointments" type="xs:long" />
+              <xs:element name="customerName" msprop:Generator_ColumnVarNameInTable="columncustomerName" msprop:Generator_ColumnPropNameInRow="customerName" msprop:Generator_ColumnPropNameInTable="customerNameColumn" msprop:Generator_UserColumnName="customerName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

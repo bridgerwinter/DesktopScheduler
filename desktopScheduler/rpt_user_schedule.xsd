@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rpt_user_schedule" targetNamespace="http://tempuri.org/rpt_user_schedule.xsd" xmlns:mstns="http://tempuri.org/rpt_user_schedule.xsd" xmlns="http://tempuri.org/rpt_user_schedule.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="database" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="database (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.desktopScheduler.Properties.Settings.GlobalReference.Default.database" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rpt_user_scheduleTableAdapter" GeneratorDataComponentClassName="rpt_user_scheduleTableAdapter" Name="rpt_user_schedule" UserDataComponentName="rpt_user_scheduleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="database (Settings)" DbObjectName="U057MV.rpt_user_schedule" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `customername`, `title`, `start` FROM `U057MV`.`rpt_user_schedule`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="customername" DataSetColumn="customername" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="start" DataSetColumn="start" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rpt_user_schedule" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="rpt_user_schedule" msprop:Generator_UserDSName="rpt_user_schedule">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rpt_user_schedule" msprop:Generator_TableClassName="rpt_user_scheduleDataTable" msprop:Generator_TableVarName="tablerpt_user_schedule" msprop:Generator_TablePropName="_rpt_user_schedule" msprop:Generator_RowDeletingName="rpt_user_scheduleRowDeleting" msprop:Generator_RowChangingName="rpt_user_scheduleRowChanging" msprop:Generator_RowEvHandlerName="rpt_user_scheduleRowChangeEventHandler" msprop:Generator_RowDeletedName="rpt_user_scheduleRowDeleted" msprop:Generator_UserTableName="rpt_user_schedule" msprop:Generator_RowChangedName="rpt_user_scheduleRowChanged" msprop:Generator_RowEvArgName="rpt_user_scheduleRowChangeEvent" msprop:Generator_RowClassName="rpt_user_scheduleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customername" msprop:Generator_ColumnVarNameInTable="columncustomername" msprop:Generator_ColumnPropNameInRow="customername" msprop:Generator_ColumnPropNameInTable="customernameColumn" msprop:Generator_UserColumnName="customername">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="title" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_UserColumnName="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="start" msprop:Generator_ColumnVarNameInTable="columnstart" msprop:Generator_ColumnPropNameInRow="start" msprop:Generator_ColumnPropNameInTable="startColumn" msprop:Generator_UserColumnName="start" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
